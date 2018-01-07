@@ -9,9 +9,8 @@ html, body {
 }
     
 
-#menu {
+#panel-left {
     font-size: 1.5em;
-    padding-top: 200px;
     text-align: center;
     color: whitesmoke;
     position: fixed;
@@ -22,16 +21,27 @@ html, body {
     margin: 0;
     background-image: url("ressources/footer_lodyas.png");
 }
+    #menu{
+        margin-top: 50vh; 
+        transform: translateY(-70%); 
+    }
+
     #name {
         color: #FA5C2F;
         font-family: 'Cabin Sketch', cursive;
         font-size: 1.7em;
+        margin: 15px 0;
     }
 
     #email {
-        color: rgb(49, 140, 231) !important;
+        color: rgb(49, 140, 231);
         font-style: italic;
         font-size: 0.8em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #email:hover {
+        color: whitesmoke;
     }
 
     #menu ul {
@@ -42,12 +52,12 @@ html, body {
         list-style: none;
     }
 
-    #menu a {
+    #menu-list a {
         font-weight: bold;
         text-decoration: none;
         color: whitesmoke;
     }
-    #menu a:hover {
+    #menu-list a:hover {
         color: #FA5C2F;
     }
 

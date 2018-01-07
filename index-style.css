@@ -46,9 +46,34 @@ html, body {
         color: whitesmoke;
     }
     #menu a:hover {
-        color: rgb(49, 140, 231);
+        color: #FA5C2F;
     }
 
+    #footer {
+        min-width: 320px;
+        width: inherit;
+        position: fixed;
+        bottom: 10px;
+    }
+    
+    #footer span {
+        font-size: 1.5em;
+        margin-left: 100px;
+    }
+    .ion-social-facebook {
+        color: #3b5998;
+        margin: 0 !important;
+    }
+    .ion-social-twitter {
+        color: #00aced;
+    }
+    .ion-social-linkedin {
+        color: #007bb5;
+    }
+    #footer span:hover {
+        color: whitesmoke;
+    }
+    
 #corps {
     position: relative;
     left: 30%;

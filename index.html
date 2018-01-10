@@ -3,21 +3,27 @@
 <head>
 	<title>Nicolas Gauthier</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link rel="stylesheet" type="text/css" href="index-style.css" />
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="index-script.js"></script>
 </head>
 <body>
-	<div id="panel-left">
+	<div id="left-panel">
 		<div id="menu">
-			<img id="photo" src="ressources/moi.png" alt="moi" style="width:200px"/>
-			<p id="name">Nicolas Gauthier</p>
-			<a href="mailto:nicolas.gauthier.1994@gmail.com" id="email">nicolas.gauthier.1994@gmail.com</a>
-			<ul id="menu-list">
-				<li><a href="#presentation">Présentation</a></li>
-				<li><a href="#cursus">Cursus</a></li>
-				<li><a href="#projets">Projets</a></li>
-			</ul>
+			<p id="name">Nicolas <span class="orange">Gauthier</span></p>
+			<a href="mailto:nicolas.gauthier.1994@gmail.com" id="email"><p>nicolas.gauthier.1994@gmail.com</p></a>
+			<div id="menu-list">
+				<a href="#home"><p>Présentation</p></a>
+				<a href="#cursus"><p>Cursus</p></a>
+				<a href="#projets"><p>Projets</p></a>
+			</div>
 		</div>
 		<div id="footer">
 			<a href="https://www.facebook.com/Nicolas.Gauthier.1994" target="_blank" id="link-fb"><span class="ion-social-facebook"/></a>
@@ -26,97 +32,104 @@
 		</div>
 	</div>
 	<div id="corps">
-		<div id="presentation" class="paragraphe">
-			<div class="titre"><h2>Présentation</h2></div>
-			<p>Bonjour !</p>
-			<p>Je m'appelle <strong>Nicolas Gauthier</strong></p>
-			<p>Je suis depuis mon enfance passionné par les jeux vidéo, qui sont un un magnifique moyen de faire voyager et rêver les joueurs...</p>
-			<p>C'est cette passion qui m'a dirigé vers le monde merveilleux de l'informatique, et je suis très fier de dire qu'aujourd'hui, je prépare une maîtrise en Informatique (Jeux Vidéo) au Canada en plus de mon diplôme d'ingénieur Français.</p>
-			<p>Actuellement en dernière année de Maîtrise et d'école d'ingénieur, je recherche un stage de fin d'études. Idéalement dans un studio de jeu vidéo ! Mais à plus long terme, je rêve de devenir <strong>game-designer</strong> voire <strong>lead-designer</strong> afin de pouvoir moi-même concevoir ces jeux qui me font tant voyager.</p>
-			<p>En ce moment, je suis surement en train de déguster une bière, qu'ils font si bien à Saguenay, ou peut-être en train de profiter d'un super jeu (non je ne m'amuse pas, c'est de la veille technologique).</p>
-			<p>Bonne visite !</p>
-		</div>
-		<div id="cursus" class="paragraphe">
-			<div class="titre"><h2>Cursus</h2></div>
-			<p>Mon premier Diplôme post-Bac a été mon <strong>DUT en Informatique</strong> obtenu à l'IUT de Blagnac, près de Toulouse. C'est ici, que j'ai pu apprendre les bases de l'informatique mais pas seulement. J'y ai aussi appris mes meilleurs notions de gestion de projet (méthodes agiles, SCRUM).</p>
-			<ul>
-				<li>Algorithmique</li>
-				<li>Programmation Orientée Objet (Java)</li>
-				<li>Conception Orientée Objet (UML)</li>
-				<li>Base de données ORACLE</li>
-				<li>Réseaux (C)</li>
-				<li>Réalisation de plusieurs petits jeux (Java/Swing, Python)</li>
-				<li>Réalisation d'un projet en méthodes agiles (SCRUM)</li>
-			</ul>
-			<p>J'ai par la suite rejoins l'<strong>école d'Ingénieur Polytech</strong> Marseille dans leur filière Informatique. J'ai pu réaliser différents projets, dont certains m'ont permis de m'approcher du monde du jeu.</p>
-			<ul>
-				<li>Réalisation d'un jeu sans moteur intégré en C#</li>
-				<li>Réalisation d'un mini-jeu à l'aide de Unity3D et de capteurs de mouvements</li>
-				<li>Programmation et Conception Orientée Objet (C++, Java, UML)</li>
-				<li>Algorithmique avancée (C)</li>
-				<li>Réseaux (C)</li>
-			</ul>
-			<p>Grâce à un partenariat avec Polytech, j'ai pu integrer l'<strong>Université du Québec à Chicoutimi</strong> (UQAC), à l'occasion de ma dernière année d'études. J'y ai suivi le programme "Maîtrise en Informatique (Jeu Vidéo)". J'ai ainsi pu en apprendre d'avantage sur la conception et la programmation de jeux.</p>
-			<ul>
-				<li>Principes de conception et développement de jeux</li>
-				<li>Initiation aux moteurs de jeux</li>
-				<li>Intelligence Artificielle pour le jeu vidéo</li>
-				<li>Gestion de projet Informatique</li>
-			</ul>
-		</div>
-		<div id="projets" class="paragraphe">
-			<div class="titre"><h2>Projets</h2></div>
-
-			<h3>Car Crash BOOM!!! Yeah!</h3>
-			<p>Jeux développé sur Unity3D, en équipe, à l'UQAC dans le cadre du cours 8INF955 avec M. Bruno Bouchard.</p>
-			<p>C'est un jeu de course en équipe de deux, ou le copilote dispose de compétences pour aider son pilote et ralentir ses ennemis.</p>
-			<p>En dehors des phases de courses habituelles, on trouve des phases de coopération dans lesquelles le pilote et le copilote doivent s'aider pour finir la phase le plus rapidement possible.</p>
-			<p>J'ai participé à la création de certaines cartes et au gameplay du copilote lors de phases de coopération.</p>
-			<div class="images">
-				<figure>
-					<img src="ressources/CCBY-coop.png" alt="CCBY phase de coop"/>
-					<figcaption>Phase de coopération, le copilote doit guider le pilote à travers le labyrinthe.</figcaption>
-				</figure>
-				<figure>
-					<img src="ressources/CCBY-multi.png" alt="CCBY écran de jeu multi-équipes"/>
-					<figcaption>Phase de courses à 2 équipes (séparation horizontale des équipes) en écran splité.</figcaption>
-				</figure>
+		<div id="home" class="section">
+			<div class="titre"><h1>Bonjour</h1></div>
+				<div class="paragraphe">
+				<!-- <p>Bonjour !</p>
+				<p>Je m'appelle <strong>Nicolas Gauthier</strong></p>
+				<p>Je suis depuis mon enfance passionné par les jeux vidéo, qui sont un un magnifique moyen de faire voyager et rêver les joueurs...</p>
+				<p>C'est cette passion qui m'a dirigé vers le monde merveilleux de l'informatique, et je suis très fier de dire qu'aujourd'hui, je prépare une maîtrise en Informatique (Jeux Vidéo) au Canada en plus de mon diplôme d'ingénieur Français.</p>
+				<p>Actuellement en dernière année de Maîtrise et d'école d'ingénieur, je recherche un stage de fin d'études. Idéalement dans un studio de jeu vidéo ! Mais à plus long terme, je rêve de devenir <strong>game-designer</strong> voire <strong>lead-designer</strong> afin de pouvoir moi-même concevoir ces jeux qui me font tant voyager.</p>
+				<p>En ce moment, je suis surement en train de déguster une bière, qu'ils font si bien à Saguenay, ou peut-être en train de profiter d'un super jeu (non je ne m'amuse pas, c'est de la veille technologique).</p>
+				<p>Bonne visite !</p> -->
+				<p style="margin-bottom:0;">Je m'appelle <strong>Nicolas Gauthier</strong>,</p><p style="margin-top:0;">je suis étudiant en Informatique dans le milieu du Jeu Vidéo.</p>
+				<p>Je souhaite devenir <strong>game-designer</strong> afin de pouvoir concevoir ces jeux qui me font tant voyager.</p>
 			</div>
-			
-			<h3>Raven</h3>
-			<p>Modification d'un jeu de tir entre plusieurs agent-pnj en C++.</p>
-			<p>Travail effectué à l'UQAC dans le cadre du cours 8IAR125 avec M. Abdenour Bouzouane.</p>
-			<ul>
-				<li>Responsable de la logique floue pour les agents-pnj : choix de l’arme, visée.</li>
-				<li>Participation à la mise en place d’un réseau de neurones.</li>
-				<li>Mise en place d’une notion d’équipe pour les agents pnj.</li>
-			</ul>
-			
-			<h3>Trump Arena</h3>
-			<p>Jeux développé en équipe lors de la WonderJam UQAC Automne 2017.</p>
-			<p>C'est un tactical game au tour par tour.</p>
-			<p>Première véritable expérience de création de jeu, de la conception au développement sur Unity3D.</p>
-			<p>J'ai participé à la conception du jeu : type de jeu, contexte, gameplay...; et à la réalisation des animations et de plusieurs fonctions outils.</p>
-			<div class="images">
-				<figure>
-					<img src="ressources/TArena-main.png" alt="TrumpArena écran principal"/>
-					<figcaption>Un jeu de combat dit “tactical”, les joueurs déplacent leurs héros de cases en cases pour aller battre ceux de son adversaire.</figcaption>
-				</figure>
-				<figure>
-					<img src="ressources/TArena-range.png" alt="TrumpArena portées de déplacement/attaque"/>
-					<figcaption>Le jeu propose de sélectionner plusieurs classes différentes, toutes proposant des gameplay alternatifs. Les héros ayant tous leurs faiblesses, il s’agira de construire son équipe intelligemment.</figcaption>
-				</figure>
+		</div>
+		<div id="cursus" class="section">
+			<div class="titre"><h2><span class="titre-init">C</span>ursus</h2></div>
+			<div class="paragraphe">
+				<p>Mon premier Diplôme post-Bac a été mon <strong>DUT en Informatique</strong> obtenu à l'IUT de Blagnac, près de Toulouse. C'est ici, que j'ai pu apprendre les bases de l'informatique mais pas seulement. J'y ai aussi appris mes meilleurs notions de gestion de projet (méthodes agiles, SCRUM).</p>
+				<ul>
+					<li>Algorithmique</li>
+					<li>Programmation Orientée Objet (Java)</li>
+					<li>Conception Orientée Objet (UML)</li>
+					<li>Base de données ORACLE</li>
+					<li>Réseaux (C)</li>
+					<li>Réalisation de plusieurs petits jeux (Java/Swing, Python)</li>
+					<li>Réalisation d'un projet en méthodes agiles (SCRUM)</li>
+				</ul>
+				<p>J'ai par la suite rejoins l'<strong>école d'Ingénieur Polytech</strong> Marseille dans leur filière Informatique. J'ai pu réaliser différents projets, dont certains m'ont permis de m'approcher du monde du jeu.</p>
+				<ul>
+					<li>Réalisation d'un jeu sans moteur intégré en C#</li>
+					<li>Réalisation d'un mini-jeu à l'aide de Unity3D et de capteurs de mouvements</li>
+					<li>Programmation et Conception Orientée Objet (C++, Java, UML)</li>
+					<li>Algorithmique avancée (C)</li>
+					<li>Réseaux (C)</li>
+				</ul>
+				<p>Grâce à un partenariat avec Polytech, j'ai pu integrer l'<strong>Université du Québec à Chicoutimi</strong> (UQAC), à l'occasion de ma dernière année d'études. J'y ai suivi le programme "Maîtrise en Informatique (Jeu Vidéo)". J'ai ainsi pu en apprendre d'avantage sur la conception et la programmation de jeux.</p>
+				<ul>
+					<li>Principes de conception et développement de jeux</li>
+					<li>Initiation aux moteurs de jeux</li>
+					<li>Intelligence Artificielle pour le jeu vidéo</li>
+					<li>Gestion de projet Informatique</li>
+				</ul>
 			</div>
+		</div>
+		<div id="projets" class="section">
+			<div class="titre"><h2><span class="titre-init">P</span>rojets</h2></div>
+			<div class="paragraphe">
+				<h3>Car Crash BOOM!!! Yeah!</h3>
+				<p>Jeux développé sur Unity3D, en équipe, à l'UQAC dans le cadre du cours 8INF955 avec M. Bruno Bouchard.</p>
+				<p>C'est un jeu de course en équipe de deux, ou le copilote dispose de compétences pour aider son pilote et ralentir ses ennemis.</p>
+				<p>En dehors des phases de courses habituelles, on trouve des phases de coopération dans lesquelles le pilote et le copilote doivent s'aider pour finir la phase le plus rapidement possible.</p>
+				<p>J'ai participé à la création de certaines cartes et au gameplay du copilote lors de phases de coopération.</p>
+				<div class="images">
+					<figure>
+						<img src="ressources/CCBY-coop.png" alt="CCBY phase de coop"/>
+						<figcaption>Phase de coopération, le copilote doit guider le pilote à travers le labyrinthe.</figcaption>
+					</figure>
+					<figure>
+						<img src="ressources/CCBY-multi.png" alt="CCBY écran de jeu multi-équipes"/>
+						<figcaption>Phase de courses à 2 équipes (séparation horizontale des équipes) en écran splité.</figcaption>
+					</figure>
+				</div>
+				
+				<h3>Raven</h3>
+				<p>Modification d'un jeu de tir entre plusieurs agent-pnj en C++.</p>
+				<p>Travail effectué à l'UQAC dans le cadre du cours 8IAR125 avec M. Abdenour Bouzouane.</p>
+				<ul>
+					<li>Responsable de la logique floue pour les agents-pnj : choix de l’arme, visée.</li>
+					<li>Participation à la mise en place d’un réseau de neurones.</li>
+					<li>Mise en place d’une notion d’équipe pour les agents pnj.</li>
+				</ul>
+				
+				<h3>Trump Arena</h3>
+				<p>Jeux développé en équipe lors de la WonderJam UQAC Automne 2017.</p>
+				<p>C'est un tactical game au tour par tour.</p>
+				<p>Première véritable expérience de création de jeu, de la conception au développement sur Unity3D.</p>
+				<p>J'ai participé à la conception du jeu : type de jeu, contexte, gameplay...; et à la réalisation des animations et de plusieurs fonctions outils.</p>
+				<div class="images">
+					<figure>
+						<img src="ressources/TArena-main.png" alt="TrumpArena écran principal"/>
+						<figcaption>Un jeu de combat dit “tactical”, les joueurs déplacent leurs héros de cases en cases pour aller battre ceux de son adversaire.</figcaption>
+					</figure>
+					<figure>
+						<img src="ressources/TArena-range.png" alt="TrumpArena portées de déplacement/attaque"/>
+						<figcaption>Le jeu propose de sélectionner plusieurs classes différentes, toutes proposant des gameplay alternatifs. Les héros ayant tous leurs faiblesses, il s’agira de construire son équipe intelligemment.</figcaption>
+					</figure>
+				</div>
 
-			<h3>Plombier Maboule</h3>
-			<p>Mini-Jeu développé en binôme à Polytech Marseille, encadré par M. Sébastien Mavromatis.</p>
-			<p>L'enjeu de ce projet était de créer un jeu fonctionnant avec des détecteurs de mouvements Polhemus Patriot.</p>
-			<p>Il a été réalisé avec Unity3D. J'ai eu la responsabilité de mettre en place une interface permettant au jeu de récuperer les données des detecteurs et de réaliser les différents niveau du jeu.</p>
-			<div class="images">
-				<figure>
-					<img src="ressources/plombierMaboule.png" alt="Plombier Maboule"/>
-					<figcaption>Plombier Maboule est un mini-jeu dans lequel le joueur doit faire passer un anneau le long d’une tige.</figcaption>
-				</figure>
+				<h3>Plombier Maboule</h3>
+				<p>Mini-Jeu développé en binôme à Polytech Marseille, encadré par M. Sébastien Mavromatis.</p>
+				<p>L'enjeu de ce projet était de créer un jeu fonctionnant avec des détecteurs de mouvements Polhemus Patriot.</p>
+				<p>Il a été réalisé avec Unity3D. J'ai eu la responsabilité de mettre en place une interface permettant au jeu de récuperer les données des detecteurs et de réaliser les différents niveau du jeu.</p>
+				<div class="images">
+					<figure>
+						<img src="ressources/plombierMaboule.png" alt="Plombier Maboule"/>
+						<figcaption>Plombier Maboule est un mini-jeu dans lequel le joueur doit faire passer un anneau le long d’une tige.</figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</div>

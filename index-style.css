@@ -1,15 +1,42 @@
-html, body {
+:root {
+    --light-blue: rgb(49, 140, 231);
+    --blue: #006496;
+    --dark-blue: #013955;
+    --orange: #FA5C2F;
+}
+.orange {
+    color: var(--orange);
+}
+
+@font-face {
+    font-family: "Handel Gothic";
+    src: url(ressources/HANDGOTN.TTF) format("truetype");
+}
+  
+  html, body {
     margin: 0;
     height: 100%;
-    min-width: 1050px;
     width: 100%;
-    background-image: url("ressources/dust_scratches.png");
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url("ressources/dust_scratches.png"); */
+    background-color: var(--blue);
+    font-family: 'Electrolize', sans-serif;
     text-align: justify; 
 }
-    
 
-#panel-left {
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Handel Gothic', sans-serif;
+}
+
+
+/* The animation code */
+@keyframes left-panel-appear {
+    0% {margin-left: -100%;}
+    100% {margin-left: 0;}
+}
+#left-panel {
+    z-index: 10;
+    font-family: 'Handel Gothic', sans-serif;
     font-size: 1.5em;
     text-align: center;
     color: whitesmoke;
@@ -17,9 +44,11 @@ html, body {
     left: 0;
     height: 100%;
     min-width: 320px;
-    width: 30%;
+    width: 29%;
     margin: 0;
     background-image: url("ressources/footer_lodyas.png");
+    animation-name: left-panel-appear;
+    animation-duration: 1.5s;
 }
     #menu{
         margin-top: 50vh; 
@@ -27,45 +56,50 @@ html, body {
     }
 
     #name {
-        color: #FA5C2F;
-        font-family: 'Cabin Sketch', cursive;
-        font-size: 1.7em;
+        color: white    ;
+        font-size: 1.8em;
         margin: 15px 0;
     }
 
     #email {
-        color: rgb(49, 140, 231);
+        font-family: Electrolize;
+        color: var(--blue);
         font-style: italic;
-        font-size: 0.8em;
         font-weight: bold;
         text-decoration: none;
     }
-    #email:hover {
-        color: whitesmoke;
+    #email p:hover {
+        background-color: rgba(0,0,0,0.15);
+        transition: background-color 0.5s;
     }
 
-    #menu ul {
+    #menu-list {
+        margin-top: 20px;
         padding: 0;
     }
-
-    #menu li {
-        list-style: none;
-    }
-
+    
     #menu-list a {
+        text-decoration: none;
+    }
+   
+    #menu-list p {
+        width: 100%;
+        transition: background-color 0.5s, color 0.5s;
         font-weight: bold;
         text-decoration: none;
         color: whitesmoke;
     }
-    #menu-list a:hover {
-        color: #FA5C2F;
+    #menu-list p:hover {
+        background-color: rgba(0,0,0,0.15);
+        color: var(--orange);
     }
 
     #footer {
         min-width: 320px;
         width: inherit;
         position: fixed;
-        bottom: 10px;
+        margin: auto;
+        bottom: 10px;    
     }
     
     #footer span {
@@ -87,17 +121,42 @@ html, body {
     }
     
 #corps {
-    position: relative;
+    position: absolute;
+    top: 0;
     left: 30%;
-    width: 70%;
+    width: 69%;
+    height: 100%;
 }
 
+    #home .paragraphe{
+        color: var(--blue);
+        text-align: center;
+        font-family: 'VT323', cursive;
+        font-size: 3em;
+        margin-top: 50vh;
+        transform: translateY(-60%);
+    }
+    
+    @keyframes sections-appear {
+        0% {margin-top: 100%;}
+        50% {margin-top: 100%;} 
+        100% {margin-top: 0;}
+    }
+    .section{
+        
+        background-color: white;
+        min-height: 100%;
+        padding: 20px 0;
+        animation-name: sections-appear;
+        animation-duration: 3s;
+    }
+
     .paragraphe {
-        padding: 20px 150px;
+        padding: 0 150px;
     }
 
     .paragraphe strong{
-        color: #006496;
+        color: var(--orange);
     }
 
     .paragraphe ul{
@@ -126,10 +185,40 @@ html, body {
     }
 
     .titre {
-        color: #FA5C2F;
-        margin-left: 100px;
+        font-size: 2em;
+        background-color:  var(--blue);
+        color: white;
+        text-align: center;
+        border-top: 2px solid var(--dark-blue);
+        border-bottom: 2px solid var(--dark-blue);
+        margin-bottom: 20px;
+    }
+    .titre-init {
+        font-weight: bold;
+        color: var(--orange);
     }
 
-    #presentation .titre h2 {
-        margin-top: 0;
+    #home .titre {
+        margin-top: 10%;
+        color: var(--dark-blue);
+        border: none;
+        background-color: rgba(0,0,0,0);
+        position: absolute;
+        width: 100%;
+    }
+   
+    @media only screen and (max-width: 1050px){
+        @keyframes left-panel-disappear {
+            0% {margin-left: 0%;}
+            100% {margin-left: -100%;}
+        }
+        #left-panel {
+            animation-name: left-panel-disappear;
+            margin-left: -100%;
+            animation-duration: 1.5s;        
+        }
+        #corps {
+            left: 0;
+            width: 100%;
+        }
     }

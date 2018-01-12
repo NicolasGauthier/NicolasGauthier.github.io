@@ -1,23 +1,8 @@
-:root {
-    --light-blue: rgb(49, 140, 231);
-    --blue: #006496;
-    --dark-blue: #013955;
-    --orange: #FA5C2F;
-}
-.orange {
-    color: var(--orange);
-}
-
-@font-face {
-    font-family: "Handel Gothic";
-    src: url(ressources/HANDGOTN.TTF) format("truetype");
-}
-  
-  html, body {
+/* Éléments généraux */
+html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    /* background-image: url("ressources/dust_scratches.png"); */
     background-color: var(--blue);
     font-family: 'Electrolize', sans-serif;
     text-align: justify; 
@@ -28,12 +13,59 @@ h1, h2, h3, h4 {
     font-family: 'Handel Gothic', sans-serif;
 }
 
+figcaption {
+    color: gray;
+    font-style: italic;
+}
 
-/* The animation code */
+
+
+
+/* Fonts */
+@font-face {
+    font-family: "Handel Gothic";
+    src: url(ressources/HANDGOTN.TTF) format("truetype");
+}
+
+
+
+/* Animations */
 @keyframes left-panel-appear {
     0% {margin-left: -100%;}
     100% {margin-left: 0;}
 }
+@keyframes sections-appear {
+    0% {margin-top: 100vh;}
+    50% {margin-top: 100vh;} 
+    100% {margin-top: 0;}
+}
+@keyframes left-panel-disappear {
+    0% {margin-left: 0%;}
+    100% {margin-left: -100%;}
+}
+
+
+
+/* Variables */
+:root {
+    --light-blue: #318ce7;
+    --blue: #006496;
+    --dark-blue: #013955;
+    --orange: #FA5C2F;
+}
+
+
+/* Span */
+.orange {
+    color: var(--orange);
+}
+
+
+
+
+
+
+/* Left Panel */
 #left-panel {
     z-index: 10;
     font-family: 'Handel Gothic', sans-serif;
@@ -50,50 +82,52 @@ h1, h2, h3, h4 {
     animation-name: left-panel-appear;
     animation-duration: 1.5s;
 }
+    /* Menu */
     #menu{
         margin-top: 50vh; 
         transform: translateY(-70%); 
     }
 
-    #name {
-        color: white    ;
-        font-size: 1.8em;
-        margin: 15px 0;
-    }
+        /* Menu Head */
+        #name {
+            color: white;
+            font-size: 1.8em;
+            margin: 15px 0;
+        }
+        #email {
+            font-family: Electrolize;
+            color: var(--blue);
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #email p:hover {
+            background-color: rgba(0,0,0,0.15);
+            color: var(--light-blue);
+            transition: background-color 0.5s, color 0.5s;
+        }
 
-    #email {
-        font-family: Electrolize;
-        color: var(--blue);
-        font-style: italic;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    #email p:hover {
-        background-color: rgba(0,0,0,0.15);
-        transition: background-color 0.5s;
-    }
+        /* Liens */
+        #menu-list {
+            margin-top: 20px;
+            padding: 0;
+        }  
+        #menu-list a {
+            text-decoration: none;
+        }
+        #menu-list p {
+            width: 100%;
+            transition: background-color 0.5s, color 0.5s;
+            font-weight: bold;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        #menu-list p:hover {
+            background-color: rgba(0,0,0,0.15);
+            color: var(--orange);
+        }
 
-    #menu-list {
-        margin-top: 20px;
-        padding: 0;
-    }
-    
-    #menu-list a {
-        text-decoration: none;
-    }
-   
-    #menu-list p {
-        width: 100%;
-        transition: background-color 0.5s, color 0.5s;
-        font-weight: bold;
-        text-decoration: none;
-        color: whitesmoke;
-    }
-    #menu-list p:hover {
-        background-color: rgba(0,0,0,0.15);
-        color: var(--orange);
-    }
-
+    /* Footer */
     #footer {
         min-width: 320px;
         width: inherit;
@@ -101,7 +135,6 @@ h1, h2, h3, h4 {
         margin: auto;
         bottom: 10px;    
     }
-    
     #footer span {
         font-size: 1.5em;
         margin-left: 100px;
@@ -110,16 +143,23 @@ h1, h2, h3, h4 {
         color: #3b5998;
         margin: 0 !important;
     }
-    .ion-social-twitter {
-        color: #00aced;
+    .ion-social-github {
+        color: #6e5494;
     }
     .ion-social-linkedin {
         color: #007bb5;
     }
     #footer span:hover {
         color: whitesmoke;
+        transition: color 0.5s;
     }
     
+
+
+
+
+
+/* Corps */ 
 #corps {
     position: absolute;
     top: 0;
@@ -127,7 +167,53 @@ h1, h2, h3, h4 {
     width: 69%;
     height: 100%;
 }
+    /* Section */
+    .section{
+        background-color: white;
+        min-height: 100%;
+        padding: 20px 0;
+        animation-name: sections-appear;
+        animation-duration: 3s;
+    }
+    
+        /* Titre */
+        .titre {
+            font-size: 2em;
+            background-color:  var(--blue);
+            color: white;
+            text-align: center;
+            border-top: 2px solid var(--dark-blue);
+            border-bottom: 2px solid var(--dark-blue);
+            margin-bottom: 20px;
+        }
 
+        /* Paragraphe */
+        .paragraphe {
+            padding: 0 150px;
+        }
+        .paragraphe ul{
+            list-style: circle;
+        }
+        .paragraphe h3{
+            color: #006496;
+        }
+        .paragraphe .images  {
+            text-align: center;
+            align-content: center;
+            align-items: center;
+        }
+        .paragraphe .images img {
+            min-width: 355px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        /* Text-Bloc */
+        .text-block {
+            margin: 50px 0;
+        }
+    
+    /* Home */
     #home .paragraphe{
         color: var(--blue);
         text-align: center;
@@ -136,68 +222,6 @@ h1, h2, h3, h4 {
         margin-top: 50vh;
         transform: translateY(-60%);
     }
-    
-    @keyframes sections-appear {
-        0% {margin-top: 100%;}
-        50% {margin-top: 100%;} 
-        100% {margin-top: 0;}
-    }
-    .section{
-        
-        background-color: white;
-        min-height: 100%;
-        padding: 20px 0;
-        animation-name: sections-appear;
-        animation-duration: 3s;
-    }
-
-    .paragraphe {
-        padding: 0 150px;
-    }
-
-    .paragraphe strong{
-        color: var(--orange);
-    }
-
-    .paragraphe ul{
-        list-style: circle;
-    }
-
-    .paragraphe h3{
-        color: #006496;
-    }
-
-    .paragraphe .images  {
-        text-align: center;
-       align-content: center;
-       align-items: center;
-    }
-
-    .paragraphe .images img {
-        min-width: 355px;
-        max-width: 80%;
-        margin: auto;
-    }
-
-    figcaption {
-        color: gray;
-        font-style: italic;
-    }
-
-    .titre {
-        font-size: 2em;
-        background-color:  var(--blue);
-        color: white;
-        text-align: center;
-        border-top: 2px solid var(--dark-blue);
-        border-bottom: 2px solid var(--dark-blue);
-        margin-bottom: 20px;
-    }
-    .titre-init {
-        font-weight: bold;
-        color: var(--orange);
-    }
-
     #home .titre {
         margin-top: 10%;
         color: var(--dark-blue);
@@ -206,19 +230,22 @@ h1, h2, h3, h4 {
         position: absolute;
         width: 100%;
     }
+    
+
+
+
    
-    @media only screen and (max-width: 1050px){
-        @keyframes left-panel-disappear {
-            0% {margin-left: 0%;}
-            100% {margin-left: -100%;}
-        }
-        #left-panel {
-            animation-name: left-panel-disappear;
-            margin-left: -100%;
-            animation-duration: 1.5s;        
-        }
-        #corps {
-            left: 0;
-            width: 100%;
-        }
+
+/* Media Queries */
+@media only screen and (max-width: 1050px){
+    #left-panel {
+        animation-name: left-panel-disappear;
+        margin-left: -100%;
+        animation-duration: 1.5s;        
     }
+    #corps {
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+}

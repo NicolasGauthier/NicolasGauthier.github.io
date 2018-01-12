@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
+
     $('#menu-list a').click(function(e){
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -6,4 +11,5 @@ $(document).ready(function() {
         }, 1000);
         e.preventDefault(); //this is the important line.
     });
+    
 });

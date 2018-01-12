@@ -3,7 +3,7 @@
 <head>
 	<title>Nicolas Gauthier</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
 	<link rel="stylesheet" type="text/css" href="index-style.css" />
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
@@ -13,6 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="index-script.js"></script>
+	<!-- TEXTILLATE.JS -->
 </head>
 <body>
 	<div id="left-panel">
@@ -20,64 +21,27 @@
 			<p id="name">Nicolas <span class="orange">Gauthier</span></p>
 			<a href="mailto:nicolas.gauthier.1994@gmail.com" id="email"><p>nicolas.gauthier.1994@gmail.com</p></a>
 			<div id="menu-list">
-				<a href="#home"><p>Présentation</p></a>
-				<a href="#cursus"><p>Cursus</p></a>
+				<a href="#home"><p>Accueil</p></a>
 				<a href="#projets"><p>Projets</p></a>
+				<a href="#about"><p>À Propos</p></a>
 			</div>
 		</div>
 		<div id="footer">
-			<a href="https://www.facebook.com/Nicolas.Gauthier.1994" target="_blank" id="link-fb"><span class="ion-social-facebook"/></a>
-			<a href="https://twitter.com/Nykolas31" target="_blank" id="link-twitter"><span class="ion-social-twitter"/></a>
-			<a href="https://www.linkedin.com/in/nicolas-gauthier-6a30aa132/" target="_blank" id="link-linkedin"><span class="ion-social-linkedin"/></a>
+			<a href="https://www.facebook.com/Nicolas.Gauthier.1994" target="_blank" id="link-fb"><span class="ion-social-facebook"></span></a>
+			<a href="https://github.com/NicolasGauthier" target="_blank" id="link-github"><span class="ion-social-github"></span></a>
+			<a href="https://www.linkedin.com/in/nicolas-gauthier-6a30aa132/" target="_blank" id="link-linkedin"><span class="ion-social-linkedin"></span></a>
 		</div>
 	</div>
 	<div id="corps">
 		<div id="home" class="section">
 			<div class="titre"><h1>Bonjour</h1></div>
 				<div class="paragraphe">
-				<!-- <p>Bonjour !</p>
-				<p>Je m'appelle <strong>Nicolas Gauthier</strong></p>
-				<p>Je suis depuis mon enfance passionné par les jeux vidéo, qui sont un un magnifique moyen de faire voyager et rêver les joueurs...</p>
-				<p>C'est cette passion qui m'a dirigé vers le monde merveilleux de l'informatique, et je suis très fier de dire qu'aujourd'hui, je prépare une maîtrise en Informatique (Jeux Vidéo) au Canada en plus de mon diplôme d'ingénieur Français.</p>
-				<p>Actuellement en dernière année de Maîtrise et d'école d'ingénieur, je recherche un stage de fin d'études. Idéalement dans un studio de jeu vidéo ! Mais à plus long terme, je rêve de devenir <strong>game-designer</strong> voire <strong>lead-designer</strong> afin de pouvoir moi-même concevoir ces jeux qui me font tant voyager.</p>
-				<p>En ce moment, je suis surement en train de déguster une bière, qu'ils font si bien à Saguenay, ou peut-être en train de profiter d'un super jeu (non je ne m'amuse pas, c'est de la veille technologique).</p>
-				<p>Bonne visite !</p> -->
-				<p style="margin-bottom:0;">Je m'appelle <strong>Nicolas Gauthier</strong>,</p><p style="margin-top:0;">je suis étudiant en Informatique dans le milieu du Jeu Vidéo.</p>
-				<p>Je souhaite devenir <strong>game-designer</strong> afin de pouvoir concevoir ces jeux qui me font tant voyager.</p>
-			</div>
-		</div>
-		<div id="cursus" class="section">
-			<div class="titre"><h2><span class="titre-init">C</span>ursus</h2></div>
-			<div class="paragraphe">
-				<p>Mon premier Diplôme post-Bac a été mon <strong>DUT en Informatique</strong> obtenu à l'IUT de Blagnac, près de Toulouse. C'est ici, que j'ai pu apprendre les bases de l'informatique mais pas seulement. J'y ai aussi appris mes meilleurs notions de gestion de projet (méthodes agiles, SCRUM).</p>
-				<ul>
-					<li>Algorithmique</li>
-					<li>Programmation Orientée Objet (Java)</li>
-					<li>Conception Orientée Objet (UML)</li>
-					<li>Base de données ORACLE</li>
-					<li>Réseaux (C)</li>
-					<li>Réalisation de plusieurs petits jeux (Java/Swing, Python)</li>
-					<li>Réalisation d'un projet en méthodes agiles (SCRUM)</li>
-				</ul>
-				<p>J'ai par la suite rejoins l'<strong>école d'Ingénieur Polytech</strong> Marseille dans leur filière Informatique. J'ai pu réaliser différents projets, dont certains m'ont permis de m'approcher du monde du jeu.</p>
-				<ul>
-					<li>Réalisation d'un jeu sans moteur intégré en C#</li>
-					<li>Réalisation d'un mini-jeu à l'aide de Unity3D et de capteurs de mouvements</li>
-					<li>Programmation et Conception Orientée Objet (C++, Java, UML)</li>
-					<li>Algorithmique avancée (C)</li>
-					<li>Réseaux (C)</li>
-				</ul>
-				<p>Grâce à un partenariat avec Polytech, j'ai pu integrer l'<strong>Université du Québec à Chicoutimi</strong> (UQAC), à l'occasion de ma dernière année d'études. J'y ai suivi le programme "Maîtrise en Informatique (Jeu Vidéo)". J'ai ainsi pu en apprendre d'avantage sur la conception et la programmation de jeux.</p>
-				<ul>
-					<li>Principes de conception et développement de jeux</li>
-					<li>Initiation aux moteurs de jeux</li>
-					<li>Intelligence Artificielle pour le jeu vidéo</li>
-					<li>Gestion de projet Informatique</li>
-				</ul>
+				<p style="margin-bottom:0;">Je m'appelle <strong class="orange">Nicolas Gauthier</strong>,</p><p style="margin-top:0;">je suis étudiant en Informatique dans le milieu du Jeu Vidéo.</p>
+				<p>Je souhaite devenir <strong class="orange">game-designer</strong> afin de pouvoir concevoir ces jeux qui me font tant voyager.</p>
 			</div>
 		</div>
 		<div id="projets" class="section">
-			<div class="titre"><h2><span class="titre-init">P</span>rojets</h2></div>
+			<div class="titre"><h2><span class="orange">P</span>rojets</h2></div>
 			<div class="paragraphe">
 				<h3>Car Crash BOOM!!! Yeah!</h3>
 				<p>Jeux développé sur Unity3D, en équipe, à l'UQAC dans le cadre du cours 8INF955 avec M. Bruno Bouchard.</p>
@@ -130,6 +94,42 @@
 						<figcaption>Plombier Maboule est un mini-jeu dans lequel le joueur doit faire passer un anneau le long d’une tige.</figcaption>
 					</figure>
 				</div>
+			</div>
+		</div>
+		<div id="about" class="section">
+			<div class="titre"><h2><span class="orange">À</span> Propos De Moi</h2></div>
+			<div class="paragraphe">
+				<div class="text-block">
+					<p>Je m'appelle <strong class="orange">Nicolas Gauthier</strong>. 
+					Je suis depuis mon enfance passionné par les jeux vidéo. 
+					C'est cette passion qui m'a dirigé vers le monde de l'informatique, et je suis très fier de dire qu'aujourd'hui, je prépare une maîtrise en Informatique (Jeux Vidéo) au Canada en plus de mon diplôme d'ingénieur Français.</p>
+					<p>Actuellement en dernière année de Maîtrise et d'école d'ingénieur, je recherche un stage de fin d'études. Idéalement dans un studio de jeu vidéo ! Mais à plus long terme, je rêve de devenir <strong class="orange">game-designer</strong> voire <strong class="orange">lead-designer</strong>.</p>
+				</div>
+				<h3>Études</h3>
+				<hr/>
+				<p><strong>2017 - 2018 : <span class="orange">Université du Québec à Chicoutimi</span></strong> (UQAC), Double Diplôme "Maîtrise en Informatique (Jeu Vidéo)".</p>
+				<ul>
+					<li>Principes de conception et développement de jeux (Unity3D, UnrealEngine)</li>
+					<li>Initiation aux moteurs de jeux</li>
+					<li>Intelligence Artificielle pour le jeu vidéo</li>
+					<li>Gestion de projet Informatique</li>
+				</ul>
+				<hr/>
+				<p><strong>2015 - 2018 : <span class="orange">École d'Ingénieur Polytech</span></strong> Marseille, en Informatique.</p>
+				<ul>
+					<li>Réalisation d'un jeu sans moteur intégré en C#</li>
+					<li>Réalisation d'un mini-jeu à l'aide de Unity3D et de capteurs de mouvements</li>
+					<li>Programmation et Conception Orientée Objet (C++, Java, UML)</li>
+				</ul>
+				<hr/>
+				<p><strong>2013 - 2015 : <span class="orange">DUT en Informatique</span></strong>, IUT de Blagnac, près de Toulouse. </p>
+				<ul>
+					<li>Algorithmique</li>
+					<li>Programmation et Conception Orientée Objet (Java, UML)</li>
+					<li>Réalisation de plusieurs petits jeux (Java/Swing, Python)</li>
+					<li>Réalisation d'un projet en méthodes agiles (SCRUM)</li>
+				</ul>
+				<hr/>
 			</div>
 		</div>
 	</div>

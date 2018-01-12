@@ -75,7 +75,6 @@ figcaption {
     position: fixed;
     left: 0;
     height: 100%;
-    min-width: 320px;
     width: 29%;
     margin: 0;
     background-image: url("ressources/footer_lodyas.png");
@@ -100,6 +99,7 @@ figcaption {
             font-style: italic;
             font-weight: bold;
             text-decoration: none;
+            overflow-wrap: break-word;  
         }
         #email p:hover {
             background-color: rgba(0,0,0,0.15);
@@ -129,7 +129,6 @@ figcaption {
 
     /* Footer */
     #footer {
-        min-width: 320px;
         width: inherit;
         position: fixed;
         margin: auto;
@@ -137,7 +136,7 @@ figcaption {
     }
     #footer span {
         font-size: 1.5em;
-        margin-left: 100px;
+        margin-left: 20%;
     }
     .ion-social-facebook {
         color: #3b5998;
@@ -165,12 +164,11 @@ figcaption {
     top: 0;
     left: 30%;
     width: 69%;
-    height: 100%;
 }
     /* Section */
     .section{
         background-color: white;
-        min-height: 100%;
+        min-height: 100vh;
         padding: 20px 0;
         animation-name: sections-appear;
         animation-duration: 3s;
@@ -189,7 +187,7 @@ figcaption {
 
         /* Paragraphe */
         .paragraphe {
-            padding: 0 150px;
+            padding: 0 15%;
         }
         .paragraphe ul{
             list-style: circle;
@@ -230,6 +228,20 @@ figcaption {
         position: absolute;
         width: 100%;
     }
+
+    /* Page-Bottom */
+    #page-bottom {
+        bottom: 0;
+        background-color: rgba(0,0,0,0.15);
+        position: absolute;
+        width: 100%;
+        color: #707070;
+    }
+    #page-bottom p {
+        padding-left: 50px;
+        margin: 0;
+    }
+
     
 
 
@@ -237,7 +249,7 @@ figcaption {
    
 
 /* Media Queries */
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 768px){
     #left-panel {
         animation-name: left-panel-disappear;
         margin-left: -100%;
@@ -247,5 +259,8 @@ figcaption {
         left: 0;
         width: 100%;
         background-color: white;
+    }
+    .paragraphe {
+        padding: 0 20px;
     }
 }

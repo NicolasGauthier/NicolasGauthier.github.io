@@ -12,4 +12,11 @@ $(document).ready(function() {
         e.preventDefault(); //this is the important line.
     });
     
+    $('.project-details').hide();
+
+    $('.img-overview img').hover(function(e){
+            $(this).parent().parent().find('.project-details').show();
+        }, function(){
+            $(this).parent().parent().find('.project-details').hide();
+    });
 });

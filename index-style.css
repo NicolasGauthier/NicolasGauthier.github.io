@@ -201,14 +201,35 @@ figcaption {
             align-items: center;
         }
         .paragraphe .images img {
-            min-width: 355px;
-            max-width: 80%;
+            width: 100%;
             margin: auto;
         }
 
         /* Text-Bloc */
         .text-block {
             margin: 50px 0;
+        }
+
+        /* Project */
+        .project {
+            text-align: center;
+        }
+
+        /* img-overview */
+        .img-overview {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+        }
+        .img-overview img{
+            width: 100%;
+        }
+
+        /* project-details */
+        .project-details {
+            display: inline-block;
+            width: 45%;
+            text-align: justify;
         }
     
     /* Home */
@@ -225,7 +246,6 @@ figcaption {
         color: var(--dark-blue);
         border: none;
         background-color: rgba(0,0,0,0);
-        position: absolute;
         width: 100%;
     }
 
@@ -249,6 +269,16 @@ figcaption {
    
 
 /* Media Queries */
+@media only screen and (max-width: 1150px){
+    #home .paragraphe {
+        margin: 0;
+        transform: initial;
+    }
+
+    #home .titre {
+        margin-top: 20px;
+    }
+}
 @media only screen and (max-width: 768px){
     #left-panel {
         animation-name: left-panel-disappear;

@@ -201,7 +201,7 @@ figcaption {
             align-items: center;
         }
         .paragraphe .images img {
-            width: 100%;
+            max-width: 100%;
             margin: auto;
         }
 

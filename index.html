@@ -47,7 +47,88 @@
 			<div class="titre"><h2><span class="orange">P</span>rojets</h2></div>
 			<div class="paragraphe">
 
-				<div id="CCBY-project" class="project">
+				<div class="img-overview">
+					<div class="blackground">
+						<img src="ressources/CCBOOM.png" alt="Car Crash BOOM!!! Yeah!" class="CCBY" />
+					</div>
+					<div class="blackground">
+						<img src="ressources/Raven.png" alt="Raven" class="Raven" />
+					</div>
+					<div class="blackground">
+						<img src="ressources/TrumpArena.png" alt="Trump Arena" class="TArena" />
+					</div>
+					<div class="blackground">
+						<img src="ressources/PlombierMaboule.png" alt="Plombier Maboule" class="PlombierMaboule" />
+					</div>
+				</div>
+
+				<div class="project-details placeholder">
+					<p>Cliquez sur un projet pour en voir les détails.</p>
+				</div>
+
+				<div class="project-details CCBY">
+					<h3>Car Crash BOOM!!! Yeah!</h3>
+					<p>Jeux développé sur Unity3D, en équipe, à l'UQAC dans le cadre du cours 8INF955 avec M. Bruno Bouchard.</p>
+					<p>C'est un jeu de course en équipe de deux, ou le copilote dispose de compétences pour aider son pilote et ralentir ses ennemis.</p>
+					<p>En dehors des phases de courses habituelles, on trouve des phases de coopération dans lesquelles le pilote et le copilote doivent s'aider pour finir la phase le plus rapidement possible.</p>
+					<p>J'ai participé à la création de certaines cartes et au gameplay du copilote lors de phases de coopération.</p>
+					<div class="images">
+						<figure>
+							<img src="ressources/CCBY-coop.png" alt="CCBY phase de coop"/>
+							<figcaption>Phase de coopération, le copilote doit guider le pilote à travers le labyrinthe.</figcaption>
+						</figure>
+						<figure>
+							<img src="ressources/CCBY-multi.png" alt="CCBY écran de jeu multi-équipes"/>
+							<figcaption>Phase de courses à 2 équipes (séparation horizontale des équipes) en écran splité.</figcaption>
+						</figure>		
+					</div>
+				</div>
+
+				<div class="project-details TArena" >
+					<h3>Trump Arena</h3>
+					<p>Jeux développé en équipe lors de la WonderJam UQAC Automne 2017.</p>
+					<p>C'est un tactical game au tour par tour.</p>
+					<p>Première véritable expérience de création de jeu, de la conception au développement sur Unity3D.</p>
+					<p>J'ai participé à la conception du jeu : type de jeu, contexte, gameplay...; et à la réalisation des animations et de plusieurs fonctions outils.</p>
+					<div class="images">
+						<figure>
+							<img src="ressources/TArena-main.png" alt="TrumpArena écran principal"/>
+							<figcaption>Un jeu de combat dit “tactical”, les joueurs déplacent leurs héros de cases en cases pour aller battre ceux de son adversaire.</figcaption>
+						</figure>
+						<figure>
+							<img src="ressources/TArena-range.png" alt="TrumpArena portées de déplacement/attaque"/>
+							<figcaption>Le jeu propose de sélectionner plusieurs classes différentes, toutes proposant des gameplay alternatifs. Les héros ayant tous leurs faiblesses, il s’agira de construire son équipe intelligemment.</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="project-details Raven" >
+					<h3>Raven</h3>
+					<p>Modification d'un jeu de tir entre plusieurs agent-pnj en C++.</p>
+					<p>Travail effectué à l'UQAC dans le cadre du cours 8IAR125 avec M. Abdenour Bouzouane.</p>
+					<ul>
+						<li>Responsable de la logique floue pour les agents-pnj : choix de l’arme, visée.</li>
+						<li>Participation à la mise en place d’un réseau de neurones.</li>
+						<li>Mise en place d’une notion d’équipe pour les agents pnj.</li>
+					</ul>
+				</div>
+					
+				<div class="project-details PlombierMaboule" >
+					<h3>Plombier Maboule</h3>
+					<p>Mini-Jeu développé en binôme à Polytech Marseille, encadré par M. Sébastien Mavromatis.</p>
+					<p>L'enjeu de ce projet était de créer un jeu fonctionnant avec des détecteurs de mouvements Polhemus Patriot.</p>
+					<p>Il a été réalisé avec Unity3D. J'ai eu la responsabilité de mettre en place une interface permettant au jeu de récuperer les données des detecteurs et de réaliser les différents niveau du jeu.</p>
+					<div class="images">
+						<figure>
+							<img src="ressources/plombierMaboule_Screen.png" alt="Plombier Maboule"/>
+							<figcaption>Plombier Maboule est un mini-jeu dans lequel le joueur doit faire passer un anneau le long d’une tige.</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+
+
+				<!-- <div id="CCBY-project" class="project">
 					<div class="img-overview">
 						<img src="ressources/CCBOOM.png" alt="Car Crash BOOM!!! Yeah!">
 					</div>
@@ -70,21 +151,27 @@
 					</div>
 				</div>
 				
-				
-				<h3>Trump Arena</h3>
-				<p>Jeux développé en équipe lors de la WonderJam UQAC Automne 2017.</p>
-				<p>C'est un tactical game au tour par tour.</p>
-				<p>Première véritable expérience de création de jeu, de la conception au développement sur Unity3D.</p>
-				<p>J'ai participé à la conception du jeu : type de jeu, contexte, gameplay...; et à la réalisation des animations et de plusieurs fonctions outils.</p>
-				<div class="images">
-					<figure>
-						<img src="ressources/TArena-main.png" alt="TrumpArena écran principal"/>
-						<figcaption>Un jeu de combat dit “tactical”, les joueurs déplacent leurs héros de cases en cases pour aller battre ceux de son adversaire.</figcaption>
-					</figure>
-					<figure>
-						<img src="ressources/TArena-range.png" alt="TrumpArena portées de déplacement/attaque"/>
-						<figcaption>Le jeu propose de sélectionner plusieurs classes différentes, toutes proposant des gameplay alternatifs. Les héros ayant tous leurs faiblesses, il s’agira de construire son équipe intelligemment.</figcaption>
-					</figure>
+				<div id="tarena" class="project">
+					<div class="img-overview">
+						<img src="ressources/TrumpArena.png" alt="Car Crash BOOM!!! Yeah!">
+					</div>
+					<div class="project-details">
+						<h3>Trump Arena</h3>
+						<p>Jeux développé en équipe lors de la WonderJam UQAC Automne 2017.</p>
+						<p>C'est un tactical game au tour par tour.</p>
+						<p>Première véritable expérience de création de jeu, de la conception au développement sur Unity3D.</p>
+						<p>J'ai participé à la conception du jeu : type de jeu, contexte, gameplay...; et à la réalisation des animations et de plusieurs fonctions outils.</p>
+						<div class="images">
+							<figure>
+								<img src="ressources/TArena-main.png" alt="TrumpArena écran principal"/>
+								<figcaption>Un jeu de combat dit “tactical”, les joueurs déplacent leurs héros de cases en cases pour aller battre ceux de son adversaire.</figcaption>
+							</figure>
+							<figure>
+								<img src="ressources/TArena-range.png" alt="TrumpArena portées de déplacement/attaque"/>
+								<figcaption>Le jeu propose de sélectionner plusieurs classes différentes, toutes proposant des gameplay alternatifs. Les héros ayant tous leurs faiblesses, il s’agira de construire son équipe intelligemment.</figcaption>
+							</figure>
+						</div>
+					</div>	
 				</div>
 
 				<h3>Raven</h3>
@@ -102,10 +189,10 @@
 				<p>Il a été réalisé avec Unity3D. J'ai eu la responsabilité de mettre en place une interface permettant au jeu de récuperer les données des detecteurs et de réaliser les différents niveau du jeu.</p>
 				<div class="images">
 					<figure>
-						<img src="ressources/plombierMaboule.png" alt="Plombier Maboule"/>
+						<img src="ressources/plombierMaboule_Screen.png" alt="Plombier Maboule"/>
 						<figcaption>Plombier Maboule est un mini-jeu dans lequel le joueur doit faire passer un anneau le long d’une tige.</figcaption>
 					</figure>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div id="about" class="section">

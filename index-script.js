@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    var myClass;
+    var myOpacity = 0.6;
+
     $(document).ready(function(){
         $(this).scrollTop(0);
     });
@@ -13,10 +16,30 @@ $(document).ready(function() {
     });
     
     $('.project-details').hide();
+    $('.project-details.placeholder').show();
+    $('.img-overview img').css('opacity', myOpacity);
 
     $('.img-overview img').hover(function(e){
-            $(this).parent().parent().find('.project-details').show();
-        }, function(){
-            $(this).parent().parent().find('.project-details').hide();
+            $(this).css('opacity', '1');
+        }, function(e){
+            if ($(this).attr('class') != myClass)
+                $(this).css('opacity', myOpacity);
     });
+
+    $('.img-overview img').click(function(e){
+            $('.img-overview img').css('opacity', myOpacity);
+            $(this).css('opacity', '1');
+            
+            myClass = $(this).attr('class');
+            var myProjectDetails = $('.project-details.'+myClass);
+            var isVisible = myProjectDetails.is(":visible"); 
+            $('.project-details').hide();
+            if(!isVisible) {myProjectDetails.show();}
+            else {
+                myClass = "";
+                $('.project-details.placeholder').show();
+            }
+
+    });
+
 });

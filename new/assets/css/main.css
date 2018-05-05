@@ -76,7 +76,7 @@
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 1750px;
-		min-width: 1400px;
+		min-width: 1200px;
 	}
 
 	.container.\37 5\25 {
@@ -92,7 +92,7 @@
 	}
 
 	.container {
-		width: 1400px;
+		width: 1200px;
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {

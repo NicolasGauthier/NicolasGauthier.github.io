@@ -1,3 +1,16 @@
 #logo:hover {
     cursor: pointer;
 }
+
+#main > section.one {
+    background-color: #FFF;
+    background-image: initial;
+}
+
+.container > p, h3 {
+    text-align: initial;
+}
+
+strong {
+    font-weight: 400;
+}

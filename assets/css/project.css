@@ -18,3 +18,18 @@
 strong {
     font-weight: 400;
 }
+
+#images{
+    display: inline;
+    text-align: center;
+}
+#images figure{
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+    min-width: 300px;
+
+}
+#images figure img{
+    max-width: 100%;
+}
